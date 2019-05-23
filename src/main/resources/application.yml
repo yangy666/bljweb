@@ -1,0 +1,10 @@
+spring:
+  freemarker:
+    suffix: .ftl
+    cache: true
+    charset: utf-8
+    request-context-attribute: request
+server:
+  port: 80
+  servlet:
+    context-path: /bljweb
