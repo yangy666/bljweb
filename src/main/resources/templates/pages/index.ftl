@@ -54,14 +54,13 @@
                 }, {emulateJSON: true}).then(
                     function (res) {
                         vm.form.password = res.body.password;
-                        if (vm.form.password != null && vm.form.password != ""){
+                        if (vm.form.password){
                             alert("成功查询");
                         }else {
                             alert("无密码")
                         }
                     },
                     function (res) {
-
                     });
             },
             add: function () {
@@ -86,7 +85,6 @@
                         //res --> status 200,404
                         //res --> message 200/404 信息
                         //res -->
-
                         if(!res.body.status){
                             alert(res.body.message);
 
@@ -113,7 +111,6 @@
                         }
                     },
                     function (res) {
-
                     });
             }
         }
